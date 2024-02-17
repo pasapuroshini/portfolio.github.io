@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <title>Ansh's</title>
+       <link rel="stylesheet" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+       <link rel="icon" type="image/x-icon" href="ajuuu.png">
+
+       </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul>
+                        <li><a href='#1'>Home</a></li>
+                        <li><a href='#about'>About Me</a></li>
+                        <li><a href='#3'>Resume</a></li>
+                        <li><a href='#contact'>Contact</a></li>
+                       
+                 
+                    </ul>
+                </nav>
+                </div>
+            <div class="header-text"id="1">
+            <p>Programmer</p>
+            <h1>Hi,I'm <span>Roshni</span><br>IV Semester,BTech</h1>
+            
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                    <img src="1.png">
+                    </div>
+                    <div class="about-col-2">
+                  <h1 class="subtitle">About Me</h1>
+                    <p>As a second-year BTech student majoring in computer science, I possess a strong foundation in programming languages such as C,C++, Java, and
+                            Python, coupled with expertise in data structures and algorithms. With hands-on experience in web development and a track record of academic
+                            excellence, highlighted by my achievement as the NPTEL e-Business topper, I am committed to leveraging my skills and leadership qualities to
+                            drive innovation in the field. Eager to contribute to collaborative projects and continuously expand my knowledge, I am enthusiastic about the
+                            opportunities that lie ahead in the world of technology.
+                  </p>
+                    
+                    <div class="subsubtitles">
+                        <p class="subsubtitlelinks activelink" onclick="opentab('skills')">Skills </p>
+                        <p class="subsubtitlelinks"onclick="opentab('experience')">Experience </p>
+                        <p class="subsubtitlelinks"onclick="opentab('education')">Education </p>
+                    </div>
+
+                <div class="tabcontents activetab" id="skills">
+                    <ul>
+                        <li><span>HTML ,CSS and JavaScript</span><br>Web Development</li>
+                        <li><span>C,C++,Java,SQL and Python</span><br>Programming</li>
+                        <li><span>Problem Solving</span><br>Competitive Coding </li>
+                        <li><span>Data Structures and Algorithms</span><br></li>
+                        <li><span>CyberSecurity</span><br>From Google</li>
+                        <li><span>E-Business</span><br>From NPTEL</li>
+                        
+
+
+                    </ul>
+                </div>
+                <div class="tabcontents" id="experience">
+                    <ul>
+                        <li><span>FEB 2024</span><br>Java Development Intern at Code-Alpha</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>IV Semester,SRM University AP</li>
+                        <li><span>Upto 2022</span><br>Sri Chaitanya Vidyaniketan</li>
+                        
+                    </ul>
+                </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="aaa" id="3">
+        <div class="anshu">
+        <div  class="bt  ">
+            
+        <a href="images/resume.pdf" download class="btn ">Download CV</a>
+    </div>
+    </div>
+    </div>
+      <div id="contact">
+        <div class="container">
+            <div class="contactleft">
+                <h1>Contact Me</h1>
+                <p><i class='bx bxl-gmail' ></i>roshnianshu03@gmail.com</p>
+                <div class="socialicons">
+                  
+                    
+                     <a href="https://www.linkedin.com/in/roshini-p0912/" target="_blank"><i class='bx bxl-linkedin bx-burst bx-rotate-90' ></i></a>
+                    <a href="https://github.com/pasapuroshini"target="_blank"><i class='bx bxl-github bx-tada bx-flip-horizontal' ></i></a>
+                    <a href="https://www.instagram.com/me._anshh/" target="_blank"><i class='bx bxl-instagram bx-tada bx-rotate-90' ></i></a>
+               
+                </div>
+            </div>
+            <div class="contactright">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  
+                    <button type="submit " class="sub">Submit</button>
+                
+                </form>
+            </div>
+        </div>
+      </div>
+        
+    <script>
+        function opentab(tabname){
+            var tablinks = document.getElementsByClassName("subsubtitlelinks");
+            var tabcontents = document.getElementsByClassName("tabcontents");
+    
+            for(var i = 0; i < tablinks.length; i++){
+                tablinks[i].classList.remove("activelink");
+            }
+            for(var i = 0; i < tabcontents.length; i++){
+                tabcontents[i].classList.remove("activetab");
+            }
+    
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+    </body>
+    </html>
